@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E56772D1295B6C80015CA0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E56772C1295B6C80015CA0D /* UIKit.framework */; };
+		2E56772F1295B6C80015CA0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E56772E1295B6C80015CA0D /* Foundation.framework */; };
+		2E5677311295B6C80015CA0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5677301295B6C80015CA0D /* CoreGraphics.framework */; };
+		2E5677361295B6C80015CA0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E5677341295B6C80015CA0D /* InfoPlist.strings */; };
+		2E5677381295B6C80015CA0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5677371295B6C80015CA0D /* main.m */; };
+		2E79B7DF12A3F6B10093C76B /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E79B7DE12A3F6B10093C76B /* Application.xib */; };
+		2E79B7E812A3F6D10093C76B /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E79B7E112A3F6D10093C76B /* AppController.m */; };
+		2E79B7E912A3F6D10093C76B /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */; };
+		2E79B7EA12A3F6D10093C76B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E79B7E512A3F6D10093C76B /* MainViewController.m */; };
+		2E79B7EB12A3F6D10093C76B /* TCPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E79B7E712A3F6D10093C76B /* TCPServer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E5677291295B6C80015CA0D /* PhädPäd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PhädPäd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E56772C1295B6C80015CA0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2E56772E1295B6C80015CA0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2E5677301295B6C80015CA0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2E5677321295B6C80015CA0D /* PhadPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhadPad-Info.plist"; sourceTree = "<group>"; };
+		2E5677331295B6C80015CA0D /* PhadPad_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhadPad_Prefix.pch; sourceTree = "<group>"; };
+		2E5677351295B6C80015CA0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2E5677371295B6C80015CA0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E79B7DE12A3F6B10093C76B /* Application.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Application.xib; path = Resources/Application.xib; sourceTree = "<group>"; };
+		2E79B7E012A3F6D10093C76B /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		2E79B7E112A3F6D10093C76B /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		2E79B7E212A3F6D10093C76B /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		2E79B7E312A3F6D10093C76B /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		2E79B7E412A3F6D10093C76B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2E79B7E512A3F6D10093C76B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2E79B7E612A3F6D10093C76B /* TCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPServer.h; sourceTree = "<group>"; };
+		2E79B7E712A3F6D10093C76B /* TCPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPServer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E5677261295B6C80015CA0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E56772D1295B6C80015CA0D /* UIKit.framework in Frameworks */,
+				2E56772F1295B6C80015CA0D /* Foundation.framework in Frameworks */,
+				2E5677311295B6C80015CA0D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E5677181295B6C80015CA0D = {
+			isa = PBXGroup;
+			children = (
+				2E5677211295B6C80015CA0D /* Classes */,
+				2E5677221295B6C80015CA0D /* Other Sources */,
+				2E5677231295B6C80015CA0D /* Resources */,
+				2E5677241295B6C80015CA0D /* Frameworks */,
+				2E56772A1295B6C80015CA0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E5677211295B6C80015CA0D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2E79B7E012A3F6D10093C76B /* AppController.h */,
+				2E79B7E112A3F6D10093C76B /* AppController.m */,
+				2E79B7E212A3F6D10093C76B /* ConfigViewController.h */,
+				2E79B7E312A3F6D10093C76B /* ConfigViewController.m */,
+				2E79B7E412A3F6D10093C76B /* MainViewController.h */,
+				2E79B7E512A3F6D10093C76B /* MainViewController.m */,
+				2E79B7E612A3F6D10093C76B /* TCPServer.h */,
+				2E79B7E712A3F6D10093C76B /* TCPServer.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2E5677221295B6C80015CA0D /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2E5677331295B6C80015CA0D /* PhadPad_Prefix.pch */,
+				2E5677371295B6C80015CA0D /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2E5677231295B6C80015CA0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E79B7DE12A3F6B10093C76B /* Application.xib */,
+				2E5677321295B6C80015CA0D /* PhadPad-Info.plist */,
+				2E5677341295B6C80015CA0D /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2E5677241295B6C80015CA0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E56772C1295B6C80015CA0D /* UIKit.framework */,
+				2E56772E1295B6C80015CA0D /* Foundation.framework */,
+				2E5677301295B6C80015CA0D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E56772A1295B6C80015CA0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E5677291295B6C80015CA0D /* PhädPäd.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E5677281295B6C80015CA0D /* PhadPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E56774A1295B6C80015CA0D /* Build configuration list for PBXNativeTarget "PhadPad" */;
+			buildPhases = (
+				2E5677251295B6C80015CA0D /* Sources */,
+				2E5677261295B6C80015CA0D /* Frameworks */,
+				2E5677271295B6C80015CA0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhadPad;
+			productName = Dancer;
+			productReference = 2E5677291295B6C80015CA0D /* PhädPäd.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E56771A1295B6C80015CA0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Britzpetermann;
+			};
+			buildConfigurationList = 2E56771D1295B6C80015CA0D /* Build configuration list for PBXProject "PhadPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2E5677181295B6C80015CA0D;
+			productRefGroup = 2E56772A1295B6C80015CA0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E5677281295B6C80015CA0D /* PhadPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E5677271295B6C80015CA0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E5677361295B6C80015CA0D /* InfoPlist.strings in Resources */,
+				2E79B7DF12A3F6B10093C76B /* Application.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E5677251295B6C80015CA0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E5677381295B6C80015CA0D /* main.m in Sources */,
+				2E79B7E812A3F6D10093C76B /* AppController.m in Sources */,
+				2E79B7E912A3F6D10093C76B /* ConfigViewController.m in Sources */,
+				2E79B7EA12A3F6D10093C76B /* MainViewController.m in Sources */,
+				2E79B7EB12A3F6D10093C76B /* TCPServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2E5677341295B6C80015CA0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E5677351295B6C80015CA0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E5677481295B6C80015CA0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E5677491295B6C80015CA0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E56774B1295B6C80015CA0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PhadPad_Prefix.pch;
+				INFOPLIST_FILE = "PhadPad-Info.plist";
+				PRODUCT_NAME = "PhädPäd";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2E56774C1295B6C80015CA0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PhadPad_Prefix.pch;
+				INFOPLIST_FILE = "PhadPad-Info.plist";
+				PRODUCT_NAME = "PhädPäd";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E56771D1295B6C80015CA0D /* Build configuration list for PBXProject "PhadPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E5677481295B6C80015CA0D /* Debug */,
+				2E5677491295B6C80015CA0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E56774A1295B6C80015CA0D /* Build configuration list for PBXNativeTarget "PhadPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E56774B1295B6C80015CA0D /* Debug */,
+				2E56774C1295B6C80015CA0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E56771A1295B6C80015CA0D /* Project object */;
+}

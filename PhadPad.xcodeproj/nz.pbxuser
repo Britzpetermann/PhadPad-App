@@ -1,0 +1,274 @@
+// !$*UTF8*$!
+{
+	2E51DA8A12A42BB100DAF6D8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E5677331295B6C80015CA0D /* PhadPad_Prefix.pch */;
+		name = "PhadPad_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 318;
+		vrLoc = 0;
+	};
+	2E51DA8B12A42BB100DAF6D8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E5677351295B6C80015CA0D /* en */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 98;
+		vrLoc = 0;
+	};
+	2E51DA8D12A42BB100DAF6D8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2E5677321295B6C80015CA0D /* PhadPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/nz/Desktop/PhädPäd/PhadPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	2E51DA9C12A42C4300DAF6D8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2E5677321295B6C80015CA0D /* PhadPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/nz/Workspaces/Agency/PhadPad/App/PhadPad/PhadPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	2E56771A1295B6C80015CA0D /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 2EA0A46412A3E71B00A719DC /* PhadPad */;
+		activeSDKPreference = iphonesimulator4.1;
+		activeTarget = 2E5677281295B6C80015CA0D /* PhadPad */;
+		codeSenseManager = 2EA0A47312A3E71E00A719DC /* Code sense */;
+		executables = (
+			2EA0A46412A3E71B00A719DC /* PhadPad */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXBookmarksDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBookmarksDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					200,
+					803,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBookmarksDataSource_LocationID,
+					PBXBookmarksDataSource_NameID,
+					PBXBookmarksDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					881,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					993,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					1007,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					933,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					969,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_SCM_ColumnID,
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					953,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 312749114;
+			PBXWorkspaceStateSaveDate = 312749114;
+		};
+		perUserProjectItems = {
+			2E51DA8A12A42BB100DAF6D8 /* PBXTextBookmark */ = 2E51DA8A12A42BB100DAF6D8 /* PBXTextBookmark */;
+			2E51DA8B12A42BB100DAF6D8 /* PBXTextBookmark */ = 2E51DA8B12A42BB100DAF6D8 /* PBXTextBookmark */;
+			2E51DA8D12A42BB100DAF6D8 /* PlistBookmark */ = 2E51DA8D12A42BB100DAF6D8 /* PlistBookmark */;
+			2E51DA9C12A42C4300DAF6D8 /* PlistBookmark */ = 2E51DA9C12A42C4300DAF6D8 /* PlistBookmark */;
+			2EA0A49712A3F08C00A719DC /* PBXTextBookmark */ = 2EA0A49712A3F08C00A719DC /* PBXTextBookmark */;
+			2EA0A49812A3F08C00A719DC /* PBXTextBookmark */ = 2EA0A49812A3F08C00A719DC /* PBXTextBookmark */;
+		};
+		sourceControlManager = 2EA0A47212A3E71E00A719DC /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	2E5677281295B6C80015CA0D /* PhadPad */ = {
+		activeExec = 0;
+		executables = (
+			2EA0A46412A3E71B00A719DC /* PhadPad */,
+		);
+	};
+	2E5677331295B6C80015CA0D /* PhadPad_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 519}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 318}";
+		};
+	};
+	2E5677351295B6C80015CA0D /* en */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 519}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 98}";
+		};
+	};
+	2EA0A46412A3E71B00A719DC /* PhadPad */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = PhadPad;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	2EA0A47212A3E71E00A719DC /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	2EA0A47312A3E71E00A719DC /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	2EA0A49712A3F08C00A719DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		name = "AppController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 419;
+		vrLoc = 0;
+	};
+	2EA0A49812A3F08C00A719DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		name = "TCPServer.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 480;
+		vrLoc = 0;
+	};
+}
