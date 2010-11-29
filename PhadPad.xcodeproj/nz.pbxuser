@@ -20,32 +20,10 @@
 		vrLen = 98;
 		vrLoc = 0;
 	};
-	2E51DA8D12A42BB100DAF6D8 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 2E5677321295B6C80015CA0D /* PhadPad-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/nz/Desktop/PhädPäd/PhadPad-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
-	2E51DA9C12A42C4300DAF6D8 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 2E5677321295B6C80015CA0D /* PhadPad-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/nz/Workspaces/Agency/PhadPad/App/PhadPad/PhadPad-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
 	2E56771A1295B6C80015CA0D /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 2EA0A46412A3E71B00A719DC /* PhadPad */;
-		activeSDKPreference = iphonesimulator4.1;
+		activeSDKPreference = iphoneos4.2;
 		activeTarget = 2E5677281295B6C80015CA0D /* PhadPad */;
 		codeSenseManager = 2EA0A47312A3E71E00A719DC /* Code sense */;
 		executables = (
@@ -81,11 +59,11 @@
 				);
 			};
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
-				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingDirectionKey = 1;
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					993,
+					202,
 					20,
 					48,
 					43,
@@ -159,7 +137,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					953,
+					162,
 					60,
 					20,
 					48,
@@ -176,16 +154,24 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 312749114;
-			PBXWorkspaceStateSaveDate = 312749114;
+			PBXPerProjectTemplateStateSaveDate = 312753534;
+			PBXWorkspaceStateSaveDate = 312753534;
 		};
 		perUserProjectItems = {
 			2E51DA8A12A42BB100DAF6D8 /* PBXTextBookmark */ = 2E51DA8A12A42BB100DAF6D8 /* PBXTextBookmark */;
 			2E51DA8B12A42BB100DAF6D8 /* PBXTextBookmark */ = 2E51DA8B12A42BB100DAF6D8 /* PBXTextBookmark */;
-			2E51DA8D12A42BB100DAF6D8 /* PlistBookmark */ = 2E51DA8D12A42BB100DAF6D8 /* PlistBookmark */;
-			2E51DA9C12A42C4300DAF6D8 /* PlistBookmark */ = 2E51DA9C12A42C4300DAF6D8 /* PlistBookmark */;
 			2EA0A49712A3F08C00A719DC /* PBXTextBookmark */ = 2EA0A49712A3F08C00A719DC /* PBXTextBookmark */;
 			2EA0A49812A3F08C00A719DC /* PBXTextBookmark */ = 2EA0A49812A3F08C00A719DC /* PBXTextBookmark */;
+			2EA5575D12A43EE20029BA9C /* PlistBookmark */ = 2EA5575D12A43EE20029BA9C /* PlistBookmark */;
+			2EA5575E12A43EE20029BA9C /* PBXTextBookmark */ = 2EA5575E12A43EE20029BA9C /* PBXTextBookmark */;
+			2EA5575F12A43EE20029BA9C /* PBXTextBookmark */ = 2EA5575F12A43EE20029BA9C /* PBXTextBookmark */;
+			2EA5576012A43EE20029BA9C /* PBXTextBookmark */ = 2EA5576012A43EE20029BA9C /* PBXTextBookmark */;
+			2EA5576112A43EE20029BA9C /* PBXTextBookmark */ = 2EA5576112A43EE20029BA9C /* PBXTextBookmark */;
+			2EA5576B12A43F8B0029BA9C /* PBXTextBookmark */ = 2EA5576B12A43F8B0029BA9C /* PBXTextBookmark */;
+			2EA5576C12A43F8B0029BA9C /* PBXTextBookmark */ = 2EA5576C12A43F8B0029BA9C /* PBXTextBookmark */;
+			2EA5576D12A43F8B0029BA9C /* PBXTextBookmark */ = 2EA5576D12A43F8B0029BA9C /* PBXTextBookmark */;
+			2EA5576E12A43F8B0029BA9C /* PBXTextBookmark */ = 2EA5576E12A43F8B0029BA9C /* PBXTextBookmark */;
+			2EA557AE12A441850029BA9C /* PBXTextBookmark */ = 2EA557AE12A441850029BA9C /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2EA0A47212A3E71E00A719DC /* Source Control */;
 		userBuildSettings = {
@@ -209,6 +195,62 @@
 			sepNavIntBoundsRect = "{{0, 0}, {1171, 519}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 98}";
+		};
+	};
+	2E79B7E012A3F6D10093C76B /* AppController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 507}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 816}";
+		};
+	};
+	2E79B7E112A3F6D10093C76B /* AppController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1279, 4251}}";
+			sepNavSelRange = "{770, 0}";
+			sepNavVisRange = "{3017, 867}";
+		};
+	};
+	2E79B7E212A3F6D10093C76B /* ConfigViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 507}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 87}";
+		};
+	};
+	2E79B7E312A3F6D10093C76B /* ConfigViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 507}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 77}";
+		};
+	};
+	2E79B7E412A3F6D10093C76B /* MainViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 484}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 759}";
+		};
+	};
+	2E79B7E512A3F6D10093C76B /* MainViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {740, 1898}}";
+			sepNavSelRange = "{738, 0}";
+			sepNavVisRange = "{393, 1061}";
+		};
+	};
+	2E79B7E612A3F6D10093C76B /* TCPServer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 484}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 772}";
+		};
+	};
+	2E79B7E712A3F6D10093C76B /* TCPServer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1244, 1638}}";
+			sepNavSelRange = "{688, 0}";
+			sepNavVisRange = "{0, 1229}";
 		};
 	};
 	2EA0A46412A3E71B00A719DC /* PhadPad */ = {
@@ -235,6 +277,8 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = PhadPad;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
@@ -270,5 +314,106 @@
 		rType = 0;
 		vrLen = 480;
 		vrLoc = 0;
+	};
+	2EA5575D12A43EE20029BA9C /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2E5677321295B6C80015CA0D /* PhadPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/nz/Workspaces/Agency/PhadPad-App/PhadPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	2EA5575E12A43EE20029BA9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E012A3F6D10093C76B /* AppController.h */;
+		name = "AppController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 816;
+		vrLoc = 0;
+	};
+	2EA5575F12A43EE20029BA9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
+		name = "AppController.m: 30";
+		rLen = 0;
+		rLoc = 770;
+		rType = 0;
+		vrLen = 867;
+		vrLoc = 3017;
+	};
+	2EA5576012A43EE20029BA9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E212A3F6D10093C76B /* ConfigViewController.h */;
+		name = "ConfigViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 87;
+		vrLoc = 0;
+	};
+	2EA5576112A43EE20029BA9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
+		name = "ConfigViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 77;
+		vrLoc = 0;
+	};
+	2EA5576B12A43F8B0029BA9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E612A3F6D10093C76B /* TCPServer.h */;
+		name = "TCPServer.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 772;
+		vrLoc = 0;
+	};
+	2EA5576C12A43F8B0029BA9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E712A3F6D10093C76B /* TCPServer.m */;
+		name = "TCPServer.m: 29";
+		rLen = 0;
+		rLoc = 688;
+		rType = 0;
+		vrLen = 1229;
+		vrLoc = 0;
+	};
+	2EA5576D12A43F8B0029BA9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E412A3F6D10093C76B /* MainViewController.h */;
+		name = "MainViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 759;
+		vrLoc = 0;
+	};
+	2EA5576E12A43F8B0029BA9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E512A3F6D10093C76B /* MainViewController.m */;
+		name = "MainViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 984;
+		vrLoc = 171;
+	};
+	2EA557AE12A441850029BA9C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E512A3F6D10093C76B /* MainViewController.m */;
+		name = "MainViewController.m: 31";
+		rLen = 0;
+		rLoc = 738;
+		rType = 0;
+		vrLen = 1061;
+		vrLoc = 393;
 	};
 }

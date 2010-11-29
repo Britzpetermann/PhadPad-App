@@ -28,7 +28,7 @@
 - (void) showConfig
 {
 	//TODO check orientation
-	configViewController.view.frame = [[UIScreen mainScreen] applicationFrame];	
+//	configViewController.view.frame = [[UIScreen mainScreen] applicationFrame];	
 
 	[self.view addSubview:configViewController.view];
 }
