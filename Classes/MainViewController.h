@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 #import "ConfigViewController.h"
+#include <AudioToolbox/AudioToolbox.h>
 
 @interface MainViewController : UIViewController <UIAccelerometerDelegate> {
 	ConfigViewController *configViewController;
@@ -8,8 +9,12 @@
     UIAccelerometer *accelerometer;
     
     double accelX, accelY, accelZ;
+	
+	CFURLRef soundFileURLRef;
+    SystemSoundID soundFileObject;
 }
 
+- (void) playStartSound;
 - (void) showConfig;
 - (void) hideConfig;
 - (void) drawImage:(unsigned char *) bytes;
@@ -18,6 +23,8 @@
 - (void) updateProgress:(int) bytes;
 - (void) hideProgress;
 
+@property (readwrite) CFURLRef soundFileURLRef;
+@property (readonly) SystemSoundID soundFileObject;
 @property (nonatomic, retain) IBOutlet ConfigViewController *configViewController;
 @property (nonatomic, retain) IBOutlet UIImageView *image;
 @property (nonatomic, retain) IBOutlet UIProgressView *progressBar;
