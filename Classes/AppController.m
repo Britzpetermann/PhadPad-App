@@ -24,16 +24,35 @@
 
 - (void) applicationDidFinishLaunching:(UIApplication *)application
 {	
-/*	bytesRead = 0;
+	[UIApplication sharedApplication].idleTimerDisabled = YES;
+
+	bytesRead = 0;
 	mainViewController.view.frame = [[UIScreen mainScreen] applicationFrame];
 	
 	[window addSubview:mainViewController.view];			
 	[window makeKeyAndVisible];
-	    
-    [UIApplication sharedApplication].idleTimerDisabled = YES;
-    
+		
+	UIDevice* thisDevice = [UIDevice currentDevice];	
+	if(thisDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad)
+    {
+		splashView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 768, 1024)];
+		splashView.image = [UIImage imageNamed:@"Default-Landscape-rotated.png"];
+    }
+    else
+    {
+		splashView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+		splashView.image = [UIImage imageNamed:@"Default.png"];
+    }
+	[window addSubview:splashView];	
+	[self performSelector:@selector(removeSplash) withObject:nil afterDelay:3];
+	[window bringSubviewToFront:splashView];
+}
+
+-(void)removeSplash;
+{
+	[splashView removeFromSuperview];
+	[splashView release];
 	[self setup];
- */
 }
 
 - (void) dealloc

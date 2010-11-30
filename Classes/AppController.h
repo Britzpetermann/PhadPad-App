@@ -9,6 +9,7 @@
 									 NSStreamDelegate>
 {
     UIWindow *window;
+	UIImageView *splashView;
 	MainViewController *mainViewController;
 	
 	TCPServer			*_server;
