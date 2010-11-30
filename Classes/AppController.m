@@ -24,7 +24,7 @@
 
 - (void) applicationDidFinishLaunching:(UIApplication *)application
 {	
-	bytesRead = 0;
+/*	bytesRead = 0;
 	mainViewController.view.frame = [[UIScreen mainScreen] applicationFrame];
 	
 	[window addSubview:mainViewController.view];			
@@ -33,6 +33,7 @@
     [UIApplication sharedApplication].idleTimerDisabled = YES;
     
 	[self setup];
+ */
 }
 
 - (void) dealloc

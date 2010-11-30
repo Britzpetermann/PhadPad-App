@@ -297,6 +297,23 @@
 			2EE5116312A54E3B006FB802 /* PBXTextBookmark */ = 2EE5116312A54E3B006FB802 /* PBXTextBookmark */;
 			2EE5116412A54E3B006FB802 /* PBXTextBookmark */ = 2EE5116412A54E3B006FB802 /* PBXTextBookmark */;
 			2EE5117812A54EDA006FB802 /* PBXTextBookmark */ = 2EE5117812A54EDA006FB802 /* PBXTextBookmark */;
+			2EE5117B12A550BF006FB802 /* PBXBookmark */ = 2EE5117B12A550BF006FB802 /* PBXBookmark */;
+			2EE5117C12A550BF006FB802 /* PBXTextBookmark */ = 2EE5117C12A550BF006FB802 /* PBXTextBookmark */;
+			2EE5117D12A550BF006FB802 /* PBXTextBookmark */ = 2EE5117D12A550BF006FB802 /* PBXTextBookmark */;
+			2EE5117E12A550BF006FB802 /* PBXTextBookmark */ = 2EE5117E12A550BF006FB802 /* PBXTextBookmark */;
+			2EE5117F12A550BF006FB802 /* PBXTextBookmark */ = 2EE5117F12A550BF006FB802 /* PBXTextBookmark */;
+			2EE5118012A550BF006FB802 /* PBXTextBookmark */ = 2EE5118012A550BF006FB802 /* PBXTextBookmark */;
+			2EE5119012A55E5B006FB802 /* PBXTextBookmark */ = 2EE5119012A55E5B006FB802 /* PBXTextBookmark */;
+			2EE5119D12A55F35006FB802 /* PBXTextBookmark */ = 2EE5119D12A55F35006FB802 /* PBXTextBookmark */;
+			2EE5119E12A55F3A006FB802 /* PBXTextBookmark */ = 2EE5119E12A55F3A006FB802 /* PBXTextBookmark */;
+			2EE5119F12A55F3A006FB802 /* PlistBookmark */ = 2EE5119F12A55F3A006FB802 /* PlistBookmark */;
+			2EE511A012A55F3A006FB802 /* PBXBookmark */ = 2EE511A012A55F3A006FB802 /* PBXBookmark */;
+			2EE511A112A55F3A006FB802 /* PBXBookmark */ = 2EE511A112A55F3A006FB802 /* PBXBookmark */;
+			2EE511A212A55F3A006FB802 /* PBXBookmark */ = 2EE511A212A55F3A006FB802 /* PBXBookmark */;
+			2EE511A312A55F3A006FB802 /* PBXBookmark */ = 2EE511A312A55F3A006FB802 /* PBXBookmark */;
+			2EE511A412A55F3A006FB802 /* PBXBookmark */ = 2EE511A412A55F3A006FB802 /* PBXBookmark */;
+			2EE511A512A55F3A006FB802 /* PBXBookmark */ = 2EE511A512A55F3A006FB802 /* PBXBookmark */;
+			2EE511A612A55F3A006FB802 /* PBXTextBookmark */ = 2EE511A612A55F3A006FB802 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2EA0A47212A3E71E00A719DC /* Source Control */;
 		userBuildSettings = {
@@ -332,9 +349,9 @@
 	};
 	2E79B7E112A3F6D10093C76B /* AppController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1279, 2990}}";
-			sepNavSelRange = "{779, 0}";
-			sepNavVisRange = "{847, 154}";
+			sepNavIntBoundsRect = "{{0, 0}, {1279, 3445}}";
+			sepNavSelRange = "{872, 0}";
+			sepNavVisRange = "{118, 889}";
 		};
 	};
 	2E79B7E212A3F6D10093C76B /* ConfigViewController.h */ = {
@@ -346,14 +363,14 @@
 	};
 	2E79B7E312A3F6D10093C76B /* ConfigViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 845}}";
-			sepNavSelRange = "{553, 0}";
-			sepNavVisRange = "{137, 1006}";
+			sepNavIntBoundsRect = "{{0, 0}, {838, 910}}";
+			sepNavSelRange = "{769, 0}";
+			sepNavVisRange = "{0, 545}";
 		};
 	};
 	2E79B7E412A3F6D10093C76B /* MainViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 453}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 476}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 759}";
 		};
@@ -362,7 +379,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1171, 1885}}";
 			sepNavSelRange = "{3053, 0}";
-			sepNavVisRange = "{2325, 964}";
+			sepNavVisRange = "{2289, 1000}";
 		};
 	};
 	2E79B7E612A3F6D10093C76B /* TCPServer.h */ = {
@@ -376,7 +393,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1244, 1625}}";
 			sepNavSelRange = "{4048, 0}";
-			sepNavVisRange = "{0, 996}";
+			sepNavVisRange = "{24, 1248}";
 		};
 	};
 	2EA0A46412A3E71B00A719DC /* PhadPad */ = {
@@ -469,7 +486,7 @@
 		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
 		name = "AppController.m: 30";
 		rLen = 0;
-		rLoc = 779;
+		rLoc = 781;
 		rType = 0;
 		vrLen = 867;
 		vrLoc = 3017;
@@ -558,7 +575,7 @@
 		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
 		name = "AppController.m: 29";
 		rLen = 0;
-		rLoc = 779;
+		rLoc = 781;
 		rType = 0;
 		vrLen = 169;
 		vrLoc = 665;
@@ -585,7 +602,7 @@
 		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
 		name = "AppController.m: 195";
 		rLen = 0;
-		rLoc = 4506;
+		rLoc = 4512;
 		rType = 0;
 		vrLen = 524;
 		vrLoc = 5394;
@@ -655,7 +672,7 @@
 		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
 		name = "AppController.m: 32";
 		rLen = 0;
-		rLoc = 779;
+		rLoc = 781;
 		rType = 0;
 		vrLen = 131;
 		vrLoc = 847;
@@ -675,7 +692,7 @@
 		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
 		name = "AppController.m: 32";
 		rLen = 0;
-		rLoc = 779;
+		rLoc = 781;
 		rType = 0;
 		vrLen = 131;
 		vrLoc = 847;
@@ -715,7 +732,7 @@
 		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
 		name = "AppController.m: 195";
 		rLen = 0;
-		rLoc = 4506;
+		rLoc = 4512;
 		rType = 0;
 		vrLen = 534;
 		vrLoc = 5384;
@@ -725,7 +742,7 @@
 		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
 		name = "AppController.m: 195";
 		rLen = 0;
-		rLoc = 4506;
+		rLoc = 4512;
 		rType = 0;
 		vrLen = 534;
 		vrLoc = 5384;
@@ -745,7 +762,7 @@
 		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
 		name = "AppController.m: 195";
 		rLen = 0;
-		rLoc = 4506;
+		rLoc = 4512;
 		rType = 0;
 		vrLen = 534;
 		vrLoc = 5384;
@@ -845,7 +862,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 11";
 		rLen = 0;
-		rLoc = 774;
+		rLoc = 884;
 		rType = 0;
 		vrLen = 441;
 		vrLoc = 0;
@@ -855,7 +872,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 18";
 		rLen = 0;
-		rLoc = 1077;
+		rLoc = 1187;
 		rType = 0;
 		vrLen = 838;
 		vrLoc = 125;
@@ -864,7 +881,7 @@
 		isa = PBXTextBookmark;
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		rLen = 0;
-		rLoc = 60;
+		rLoc = 64;
 		rType = 1;
 	};
 	2EE5107D12A5189B006FB802 /* PBXTextBookmark */ = {
@@ -872,7 +889,7 @@
 		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
 		name = "AppController.m: 32";
 		rLen = 0;
-		rLoc = 779;
+		rLoc = 781;
 		rType = 0;
 		vrLen = 131;
 		vrLoc = 847;
@@ -922,7 +939,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 47";
 		rLen = 0;
-		rLoc = 1614;
+		rLoc = 1724;
 		rType = 0;
 		vrLen = 828;
 		vrLoc = 361;
@@ -964,7 +981,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 10";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 769;
 		rType = 0;
 		vrLen = 956;
 		vrLoc = 0;
@@ -974,7 +991,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 10";
 		rLen = 0;
-		rLoc = 660;
+		rLoc = 770;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 182;
@@ -984,7 +1001,7 @@
 		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
 		name = "AppController.m: 32";
 		rLen = 0;
-		rLoc = 779;
+		rLoc = 781;
 		rType = 0;
 		vrLen = 131;
 		vrLoc = 847;
@@ -1004,7 +1021,7 @@
 		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
 		name = "AppController.m: 32";
 		rLen = 0;
-		rLoc = 779;
+		rLoc = 781;
 		rType = 0;
 		vrLen = 131;
 		vrLoc = 847;
@@ -1110,7 +1127,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 21";
 		rLen = 0;
-		rLoc = 1019;
+		rLoc = 1129;
 		rType = 0;
 		vrLen = 1047;
 		vrLoc = 95;
@@ -1178,7 +1195,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 21";
 		rLen = 0;
-		rLoc = 1019;
+		rLoc = 1129;
 		rType = 0;
 		vrLen = 1045;
 		vrLoc = 95;
@@ -1188,7 +1205,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 12";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 723;
 		rType = 0;
 		vrLen = 1245;
 		vrLoc = 95;
@@ -1198,7 +1215,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 12";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 723;
 		rType = 0;
 		vrLen = 1245;
 		vrLoc = 95;
@@ -1258,7 +1275,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 12";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 723;
 		rType = 0;
 		vrLen = 1245;
 		vrLoc = 95;
@@ -1308,7 +1325,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 14";
 		rLen = 0;
-		rLoc = 638;
+		rLoc = 748;
 		rType = 0;
 		vrLen = 1038;
 		vrLoc = 0;
@@ -1318,7 +1335,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 13";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 723;
 		rType = 0;
 		vrLen = 1093;
 		vrLoc = 33;
@@ -1328,7 +1345,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 12";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 723;
 		rType = 0;
 		vrLen = 1096;
 		vrLoc = 71;
@@ -1338,7 +1355,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 14";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 723;
 		rType = 0;
 		vrLen = 1261;
 		vrLoc = 95;
@@ -1348,7 +1365,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 13";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 723;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 95;
@@ -1358,7 +1375,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 19";
 		rLen = 0;
-		rLoc = 605;
+		rLoc = 715;
 		rType = 0;
 		vrLen = 995;
 		vrLoc = 115;
@@ -1368,7 +1385,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 21";
 		rLen = 0;
-		rLoc = 605;
+		rLoc = 715;
 		rType = 0;
 		vrLen = 1025;
 		vrLoc = 162;
@@ -1378,7 +1395,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 22";
 		rLen = 0;
-		rLoc = 605;
+		rLoc = 715;
 		rType = 0;
 		vrLen = 942;
 		vrLoc = 250;
@@ -1414,7 +1431,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 21";
 		rLen = 7;
-		rLoc = 526;
+		rLoc = 580;
 		rType = 0;
 		vrLen = 1105;
 		vrLoc = 248;
@@ -1424,7 +1441,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 21";
 		rLen = 0;
-		rLoc = 553;
+		rLoc = 607;
 		rType = 0;
 		vrLen = 1094;
 		vrLoc = 252;
@@ -1434,7 +1451,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 21";
 		rLen = 0;
-		rLoc = 553;
+		rLoc = 607;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 322;
@@ -1444,7 +1461,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 23";
 		rLen = 0;
-		rLoc = 602;
+		rLoc = 656;
 		rType = 0;
 		vrLen = 1010;
 		vrLoc = 393;
@@ -1454,7 +1471,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 22";
 		rLen = 0;
-		rLoc = 553;
+		rLoc = 607;
 		rType = 0;
 		vrLen = 1109;
 		vrLoc = 250;
@@ -1464,7 +1481,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 23";
 		rLen = 0;
-		rLoc = 596;
+		rLoc = 650;
 		rType = 0;
 		vrLen = 1087;
 		vrLoc = 272;
@@ -1474,7 +1491,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 22";
 		rLen = 0;
-		rLoc = 553;
+		rLoc = 607;
 		rType = 0;
 		vrLen = 1016;
 		vrLoc = 387;
@@ -1510,7 +1527,7 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 23";
 		rLen = 8;
-		rLoc = 594;
+		rLoc = 648;
 		rType = 0;
 		vrLen = 1079;
 		vrLoc = 322;
@@ -1530,9 +1547,139 @@
 		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
 		name = "ConfigViewController.m: 21";
 		rLen = 0;
-		rLoc = 553;
+		rLoc = 607;
 		rType = 0;
 		vrLen = 1006;
 		vrLoc = 137;
+	};
+	2EE5117B12A550BF006FB802 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2EE5113112A54CA7006FB802 /* config.png */;
+	};
+	2EE5117C12A550BF006FB802 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E712A3F6D10093C76B /* TCPServer.m */;
+		name = "TCPServer.m: 104";
+		rLen = 0;
+		rLoc = 4048;
+		rType = 0;
+		vrLen = 1248;
+		vrLoc = 24;
+	};
+	2EE5117D12A550BF006FB802 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E412A3F6D10093C76B /* MainViewController.h */;
+		name = "MainViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 759;
+		vrLoc = 0;
+	};
+	2EE5117E12A550BF006FB802 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E512A3F6D10093C76B /* MainViewController.m */;
+		name = "MainViewController.m: 116";
+		rLen = 0;
+		rLoc = 3053;
+		rType = 0;
+		vrLen = 1000;
+		vrLoc = 2289;
+	};
+	2EE5117F12A550BF006FB802 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
+		name = "ConfigViewController.m: 21";
+		rLen = 0;
+		rLoc = 607;
+		rType = 0;
+		vrLen = 1060;
+		vrLoc = 137;
+	};
+	2EE5118012A550BF006FB802 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
+		name = "ConfigViewController.m: 26";
+		rLen = 0;
+		rLoc = 699;
+		rType = 0;
+		vrLen = 947;
+		vrLoc = 33;
+	};
+	2EE5119012A55E5B006FB802 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
+		name = "AppController.m: 32";
+		rLen = 0;
+		rLoc = 781;
+		rType = 0;
+		vrLen = 154;
+		vrLoc = 847;
+	};
+	2EE5119D12A55F35006FB802 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
+		name = "AppController.m: 32";
+		rLen = 0;
+		rLoc = 781;
+		rType = 0;
+		vrLen = 175;
+		vrLoc = 725;
+	};
+	2EE5119E12A55F3A006FB802 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
+		name = "ConfigViewController.m: 19";
+		rLen = 0;
+		rLoc = 544;
+		rType = 0;
+		vrLen = 974;
+		vrLoc = 771;
+	};
+	2EE5119F12A55F3A006FB802 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2E5677321295B6C80015CA0D /* PhadPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = "/Users/nz/Workspaces/Agency/PhadPad-App/PhadPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	2EE511A012A55F3A006FB802 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2EE5113312A54CA7006FB802 /* config@2x.png */;
+	};
+	2EE511A112A55F3A006FB802 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2EE5113612A54CA7006FB802 /* Default@2x.png */;
+	};
+	2EE511A212A55F3A006FB802 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2EE5113512A54CA7006FB802 /* Default-Landscape.png */;
+	};
+	2EE511A312A55F3A006FB802 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2EE5113412A54CA7006FB802 /* Default.png */;
+	};
+	2EE511A412A55F3A006FB802 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2EE5113212A54CA7006FB802 /* config-ipad.png */;
+	};
+	2EE511A512A55F3A006FB802 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2EE5113112A54CA7006FB802 /* config.png */;
+	};
+	2EE511A612A55F3A006FB802 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E112A3F6D10093C76B /* AppController.m */;
+		name = "AppController.m: 36";
+		rLen = 0;
+		rLoc = 872;
+		rType = 0;
+		vrLen = 889;
+		vrLoc = 118;
 	};
 }
