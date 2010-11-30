@@ -16,7 +16,6 @@
 	NSOutputStream		*_outStream;
 	BOOL				_inReady;
 	BOOL				_outReady;
-	UIDeviceOrientation lastOrientation;
 	unsigned char *bytes;
 	int bytesRead;
 }
@@ -26,5 +25,4 @@
 
 - (void) sendTouch:(CGPoint)point addr:(int)addr type:(int)type;
 - (void) sendAcceleration:(UIAcceleration*)acceleration;
-- (void) sendSize:(short)width height:(short)height;
 @end

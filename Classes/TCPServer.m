@@ -82,7 +82,6 @@ static void TCPServerAcceptCallBack(CFSocketRef socket, CFSocketCallBackType typ
 	
 	
     int yes = 1;
-   // setsockopt(CFSocketGetNative(witap_socket), SOL_SOCKET, SO_REUSEADDR, (void *)&yes, sizeof(yes));	
 	setsockopt(CFSocketGetNative(witap_socket), SOL_SOCKET, SO_REUSEADDR, (void *)&yes, sizeof(struct sockaddr_in));
 
 		struct sockaddr_in addr4;

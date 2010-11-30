@@ -13,9 +13,12 @@
 
 - (void) _showAlert:(NSString *)title
 {
+	//prevent alert and reconnect
+	
 	/*UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:@"Check your networking configuration." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
 	[alertView show]; 
 	[alertView release];*/
+	
     [self setup];
 }
 
@@ -26,42 +29,10 @@
 	
 	[window addSubview:mainViewController.view];			
 	[window makeKeyAndVisible];
-	
-	lastOrientation = UIDeviceOrientationUnknown;
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationDidChange:) name:UIDeviceOrientationDidChangeNotification object:nil];
-    
+	    
     [UIApplication sharedApplication].idleTimerDisabled = YES;
     
 	[self setup];
-}
-
-- (void)orientationDidChange:(NSNotification *)note
-{
-	UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
-	
-	if (orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown)
-	{
-		if (lastOrientation != UIDeviceOrientationPortrait)
-		{
-			int width = [[UIScreen mainScreen] applicationFrame].size.width;
-			int height = [[UIScreen mainScreen] applicationFrame].size.height;
-			NSLog(@"new size %i, %i", width, height);
-			[self sendSize:width height:height];
-			lastOrientation = UIDeviceOrientationPortrait;
-		}
-	}
-	else if (orientation == UIDeviceOrientationLandscapeLeft || orientation == UIDeviceOrientationLandscapeRight)
-	{
-		if (lastOrientation != UIDeviceOrientationLandscapeLeft)
-		{
-			int height = [[UIScreen mainScreen] applicationFrame].size.width;
-			int width = [[UIScreen mainScreen] applicationFrame].size.height;
-			NSLog(@"new size %i, %i", width, height);		
-			[self sendSize:width height:height];
-			lastOrientation = UIDeviceOrientationLandscapeLeft;	
-		}
-	}
-		
 }
 
 - (void) dealloc
@@ -192,35 +163,6 @@
 	}	
 }
 
-
-- (void) sendSize:(short)width height:(short)height
-{
-	if (_outStream && [_outStream hasSpaceAvailable])
-	{
-		int HEADER_SIZE = 1 + 4;
-		int MESSAGE_SIZE = 2 * 2;
-		
-		uint8_t message[HEADER_SIZE + MESSAGE_SIZE];
-		
-		//header
-		message[0] = 4;
-		memcpy(&message[1], &MESSAGE_SIZE, 4);
-		
-		//message
-		memcpy(&message[5], &width, 2);
-		memcpy(&message[7], &height, 2);
-		
-		if([_outStream write:(const uint8_t *)&message maxLength:sizeof(message)] == -1)
-		{
-			[self _showAlert:@"Failed sending data to peer"];			
-		}
-		else
-		{
-			// NSLog(@"Send command %i", message[0]);
-		}
-	}
-}
-
 - (void) openStreams
 {
 	_inStream.delegate = self;
@@ -250,23 +192,7 @@
 				_inReady = YES;
 			else
 				_outReady = YES;
-			
-
-			if (lastOrientation == UIDeviceOrientationPortrait || lastOrientation == UIDeviceOrientationPortraitUpsideDown)
-			{
-				int width = [[UIScreen mainScreen] applicationFrame].size.width;
-				int height = [[UIScreen mainScreen] applicationFrame].size.height;
-				NSLog(@"initial size %i, %i", width, height);
-				[self sendSize:width height:height];
-			}
-			else if (lastOrientation == UIDeviceOrientationLandscapeLeft || lastOrientation == UIDeviceOrientationLandscapeRight)
-			{
-				int height = [[UIScreen mainScreen] applicationFrame].size.width;
-				int width = [[UIScreen mainScreen] applicationFrame].size.height;
-				NSLog(@"initial size %i, %i", width, height);		
-				[self sendSize:width height:height];
-			}
-			
+				
 			break;
 		}
 		case NSStreamEventHasBytesAvailable:
