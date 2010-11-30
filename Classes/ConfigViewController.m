@@ -6,7 +6,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	ipAddress.text = [self getIPAddress];
+	ipAddress.text = [NSString stringWithFormat:@"%@:%@", [self getIPAddress], @"4446"];
 }
 
 // getIPAddress from: http://blog.zachwaugh.com/post/309927273/programmatically-retrieving-ip-address-of-iphone
