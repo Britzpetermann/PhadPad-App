@@ -110,7 +110,15 @@
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 					</object>
-					<object class="IBUILabel" id="707080902">
+					<object class="IBUIImageView" id="389827767">
+						<reference key="NSNextResponder" ref="576834273"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{36, 35}, {240, 128}}</string>
+						<reference key="NSSuperview" ref="576834273"/>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+					</object>
+					<object class="IBUILabel" id="137842093">
 						<reference key="NSNextResponder" ref="576834273"/>
 						<int key="NSvFlags">319</int>
 						<string key="NSFrame">{{20, 20}, {261, 28}}</string>
@@ -217,9 +225,17 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">ipAddress</string>
 						<reference key="source" ref="518150660"/>
-						<reference key="destination" ref="707080902"/>
+						<reference key="destination" ref="137842093"/>
 					</object>
 					<int key="connectionID">47</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">image</string>
+						<reference key="source" ref="518150660"/>
+						<reference key="destination" ref="389827767"/>
+					</object>
+					<int key="connectionID">49</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -273,7 +289,8 @@
 						<reference key="object" ref="576834273"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="610038680"/>
-							<reference ref="707080902"/>
+							<reference ref="137842093"/>
+							<reference ref="389827767"/>
 						</array>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">ConfigView</string>
@@ -300,7 +317,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">46</int>
-						<reference key="object" ref="707080902"/>
+						<reference key="object" ref="137842093"/>
+						<reference key="parent" ref="576834273"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">48</int>
+						<reference key="object" ref="389827767"/>
 						<reference key="parent" ref="576834273"/>
 					</object>
 				</array>
@@ -340,6 +362,10 @@
 				<object class="NSAffineTransform" key="46.IBViewBoundsToFrameTransform">
 					<bytes key="NSTransformStruct">P4AAAL+AAABBwAAAwiAAAA</bytes>
 				</object>
+				<string key="48.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<object class="NSAffineTransform" key="48.IBViewBoundsToFrameTransform">
+					<bytes key="NSTransformStruct">P4AAAL+AAABCjAAAwx8AAA</bytes>
+				</object>
 				<string key="6.CustomClassName">MainViewController</string>
 				<string key="6.IBEditorWindowLastContentRect">{{528, 201}, {320, 480}}</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -350,7 +376,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">47</int>
+			<int key="maxID">49</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -379,17 +405,20 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">ConfigViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">ipAddress</string>
-						<string key="NS.object.0">UILabel</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">ipAddress</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="image">UIImageView</string>
+						<string key="ipAddress">UILabel</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="image">
+							<string key="name">image</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="ipAddress">
 							<string key="name">ipAddress</string>
 							<string key="candidateClassName">UILabel</string>
 						</object>
-					</object>
+					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">Classes/ConfigViewController.h</string>

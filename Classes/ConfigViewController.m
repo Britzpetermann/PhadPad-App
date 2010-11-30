@@ -3,10 +3,27 @@
 @implementation ConfigViewController
 
 @synthesize ipAddress;
+@synthesize image;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 	ipAddress.text = [NSString stringWithFormat:@"%@:%@", [self getIPAddress], @"4446"];
+		
+	UIImage *rawimage;
+	UIDevice* thisDevice = [UIDevice currentDevice];
+    if(thisDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad)
+    {
+		rawimage = [UIImage imageNamed:@"config-ipad.png"];
+		image.frame = CGRectMake(0, 0, 1024, 768);
+    }
+    else
+    {
+		rawimage = [UIImage imageNamed:@"config.png"];
+		image.frame = CGRectMake(0, 0, 480, 320);
+    }
+	
+	image.image = rawimage;
+	[rawimage release];
 }
 
 // getIPAddress from: http://blog.zachwaugh.com/post/309927273/programmatically-retrieving-ip-address-of-iphone
