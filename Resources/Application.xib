@@ -12,6 +12,7 @@
 		</object>
 		<array class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<integer value="19"/>
+			<integer value="7"/>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -54,7 +55,7 @@
 				<bool key="IBUIHorizontal">NO</bool>
 			</object>
 			<object class="IBUIView" id="469596487">
-				<nil key="NSNextResponder"/>
+				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIImageView" id="566661204">
@@ -62,9 +63,9 @@
 						<int key="NSvFlags">274</int>
 						<string key="NSFrameSize">{320, 460}</string>
 						<reference key="NSSuperview" ref="469596487"/>
-						<object class="NSColor" key="IBUIBackgroundColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAwIDEAA</bytes>
+						<object class="NSColor" key="IBUIBackgroundColor" id="19417057">
+							<int key="NSColorSpace">2</int>
+							<bytes key="NSRGB">MC4wOTQxMTc2NTYzNSAwLjgwMzkyMTYzOTkgMC43Mjk0MTE3ODA4AA</bytes>
 						</object>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -72,13 +73,16 @@
 					<object class="IBUIProgressView" id="290125768">
 						<reference key="NSNextResponder" ref="469596487"/>
 						<int key="NSvFlags">-2147483356</int>
-						<string key="NSFrame">{{95, 357}, {150, 9}}</string>
+						<string key="NSFrame">{{20, 20}, {150, 9}}</string>
 						<reference key="NSSuperview" ref="469596487"/>
+						<reference key="IBUIBackgroundColor" ref="19417057"/>
+						<float key="IBUIAlpha">0.47183099389076233</float>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<float key="IBUIProgress">0.5</float>
 					</object>
 				</array>
 				<string key="NSFrameSize">{320, 460}</string>
+				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MSAwIDAAA</bytes>
@@ -113,7 +117,7 @@
 					<object class="IBUIImageView" id="389827767">
 						<reference key="NSNextResponder" ref="576834273"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{36, 35}, {240, 128}}</string>
+						<string key="NSFrame">{{96, 97}, {240, 128}}</string>
 						<reference key="NSSuperview" ref="576834273"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -129,13 +133,16 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Waiting for connection...</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC42IDAuNiAwLjYgMC42AA</bytes>
+						<object class="NSFont" key="IBUIFont">
+							<string key="NSName">Helvetica</string>
+							<double key="NSSize">20</double>
+							<int key="NSfFlags">16</int>
 						</object>
+						<reference key="IBUITextColor" ref="683712507"/>
 						<reference key="IBUIHighlightedColor" ref="683712507"/>
 						<int key="IBUIBaselineAdjustment">1</int>
-						<float key="IBUIMinimumFontSize">10</float>
+						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+						<float key="IBUIMinimumFontSize">14</float>
 					</object>
 				</array>
 				<string key="NSFrameSize">{537, 354}</string>
@@ -278,8 +285,8 @@
 						<int key="objectID">7</int>
 						<reference key="object" ref="469596487"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="566661204"/>
 							<reference ref="290125768"/>
+							<reference ref="566661204"/>
 						</array>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">TouchView</string>
@@ -330,7 +337,7 @@
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
 				<string key="-1.CustomClassName">UIApplication</string>
 				<string key="-2.CustomClassName">UIResponder</string>
-				<string key="19.IBEditorWindowLastContentRect">{{278, 412}, {537, 354}}</string>
+				<string key="19.IBEditorWindowLastContentRect">{{265, 456}, {537, 354}}</string>
 				<string key="19.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<object class="NSAffineTransform" key="19.IBViewBoundsToFrameTransform">
 					<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw+UAAA</bytes>
@@ -352,11 +359,11 @@
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="41.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<object class="NSAffineTransform" key="41.IBViewBoundsToFrameTransform">
-					<bytes key="NSTransformStruct">P4AAAL+AAABCFAAAw78AAA</bytes>
+					<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw+UAAA</bytes>
 				</object>
 				<string key="43.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<object class="NSAffineTransform" key="43.IBViewBoundsToFrameTransform">
-					<bytes key="NSTransformStruct">P4AAAL+AAABCtgAAw7YAAA</bytes>
+					<bytes key="NSTransformStruct">P4AAAL+AAABBoAAAwdgAAA</bytes>
 				</object>
 				<string key="46.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<object class="NSAffineTransform" key="46.IBViewBoundsToFrameTransform">
@@ -364,12 +371,12 @@
 				</object>
 				<string key="48.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<object class="NSAffineTransform" key="48.IBViewBoundsToFrameTransform">
-					<bytes key="NSTransformStruct">P4AAAL+AAABCjAAAwx8AAA</bytes>
+					<bytes key="NSTransformStruct">P4AAAL+AAABCEAAAwyEAAA</bytes>
 				</object>
 				<string key="6.CustomClassName">MainViewController</string>
 				<string key="6.IBEditorWindowLastContentRect">{{528, 201}, {320, 480}}</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="7.IBEditorWindowLastContentRect">{{478, 369}, {320, 460}}</string>
+				<string key="7.IBEditorWindowLastContentRect">{{482, 251}, {320, 460}}</string>
 				<string key="7.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>

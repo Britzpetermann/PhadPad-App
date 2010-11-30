@@ -44,7 +44,7 @@
 		splashView.image = [UIImage imageNamed:@"Default.png"];
     }
 	[window addSubview:splashView];	
-	[self performSelector:@selector(removeSplash) withObject:nil afterDelay:3];
+	[self performSelector:@selector(removeSplash) withObject:nil afterDelay:2.5];
 	[window bringSubviewToFront:splashView];
 }
 

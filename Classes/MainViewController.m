@@ -25,6 +25,8 @@
     self.soundFileURLRef = (CFURLRef) [startSound retain];
 	AudioServicesCreateSystemSoundID(soundFileURLRef, &soundFileObject);
 	
+	[progressBar setHidden:YES];
+	
 	[self playStartSound];
 }
 

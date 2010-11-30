@@ -16,14 +16,16 @@
 		rawimage = [UIImage imageNamed:@"config-ipad.png"];
 		image.frame = CGRectMake(0, 0, 1024, 768);
 		
-		ipAddress.frame = CGRectMake(200, 100, 300, 40);
+		ipAddress.frame = CGRectMake(367, 218, 300, 40);
+		ipAddress.font = [UIFont fontWithName:@"Helvetica Neue" size:20];
     }
     else
     {
 		rawimage = [UIImage imageNamed:@"config.png"];
 		image.frame = CGRectMake(0, 0, 480, 320);
 		
-		ipAddress.frame = CGRectMake(100, 200, 300, 40);		
+		ipAddress.frame = CGRectMake(147, 81, 300, 40);		
+		ipAddress.font = [UIFont fontWithName:@"Helvetica" size:10];
     }
 	
 	image.image = rawimage;
