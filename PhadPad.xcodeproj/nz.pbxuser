@@ -23,8 +23,11 @@
 	2E56771A1295B6C80015CA0D /* Project object */ = {
 		activeBuildConfigurationName = Release;
 		activeExecutable = 2EA0A46412A3E71B00A719DC /* PhadPad */;
-		activeSDKPreference = iphoneos4.2;
+		activeSDKPreference = iphonesimulator4.2;
 		activeTarget = 2E5677281295B6C80015CA0D /* PhadPad */;
+		addToTargets = (
+			2E5677281295B6C80015CA0D /* PhadPad */,
+		);
 		breakpoints = (
 		);
 		codeSenseManager = 2EA0A47312A3E71E00A719DC /* Code sense */;
@@ -252,6 +255,9 @@
 			2EE510B212A51BF2006FB802 /* PBXTextBookmark */ = 2EE510B212A51BF2006FB802 /* PBXTextBookmark */;
 			2EE510B412A51BF2006FB802 /* PBXTextBookmark */ = 2EE510B412A51BF2006FB802 /* PBXTextBookmark */;
 			2EE510B512A51BF2006FB802 /* PBXTextBookmark */ = 2EE510B512A51BF2006FB802 /* PBXTextBookmark */;
+			2EE510D612A52139006FB802 /* PBXTextBookmark */ = 2EE510D612A52139006FB802 /* PBXTextBookmark */;
+			2EE510D712A52139006FB802 /* PlistBookmark */ = 2EE510D712A52139006FB802 /* PlistBookmark */;
+			2EE510D812A52139006FB802 /* PlistBookmark */ = 2EE510D812A52139006FB802 /* PlistBookmark */;
 		};
 		sourceControlManager = 2EA0A47212A3E71E00A719DC /* Source Control */;
 		userBuildSettings = {
@@ -272,9 +278,10 @@
 	};
 	2E5677351295B6C80015CA0D /* en */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 519}}";
+			sepNavIntBoundsRect = "{{0, 0}, {883, 723}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 98}";
+			sepNavWindowFrame = "{{15, 4}, {942, 874}}";
 		};
 	};
 	2E79B7E012A3F6D10093C76B /* AppController.h */ = {
@@ -300,9 +307,9 @@
 	};
 	2E79B7E312A3F6D10093C76B /* ConfigViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 598}}";
-			sepNavSelRange = "{195, 0}";
-			sepNavVisRange = "{34, 1063}";
+			sepNavIntBoundsRect = "{{0, 0}, {838, 624}}";
+			sepNavSelRange = "{229, 0}";
+			sepNavVisRange = "{143, 619}";
 		};
 	};
 	2E79B7E412A3F6D10093C76B /* MainViewController.h */ = {
@@ -1048,5 +1055,37 @@
 		rType = 0;
 		vrLen = 1063;
 		vrLoc = 34;
+	};
+	2EE510D612A52139006FB802 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2E79B7E312A3F6D10093C76B /* ConfigViewController.m */;
+		name = "ConfigViewController.m: 21";
+		rLen = 0;
+		rLoc = 589;
+		rType = 0;
+		vrLen = 1047;
+		vrLoc = 95;
+	};
+	2EE510D712A52139006FB802 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2E5677321295B6C80015CA0D /* PhadPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/nz/Workspaces/Agency/PhadPad-App/PhadPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	2EE510D812A52139006FB802 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2E5677321295B6C80015CA0D /* PhadPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/nz/Workspaces/Agency/PhadPad-App/PhadPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 }
