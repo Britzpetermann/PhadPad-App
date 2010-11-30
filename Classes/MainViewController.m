@@ -11,6 +11,8 @@
 @synthesize image;
 @synthesize progressBar;
 @synthesize accelerometer;
+@synthesize soundFileURLRef;
+@synthesize soundFileObject;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -18,6 +20,16 @@
     self.accelerometer = [UIAccelerometer sharedAccelerometer];
     self.accelerometer.updateInterval = .05;
     self.accelerometer.delegate = self;
+	
+	NSURL *startSound = [[NSBundle mainBundle] URLForResource: @"TouchMe" withExtension: @"aif"];
+    self.soundFileURLRef = (CFURLRef) [startSound retain];
+	AudioServicesCreateSystemSoundID(soundFileURLRef, &soundFileObject);
+	
+	[self playStartSound];
+}
+
+-(void) playStartSound {
+	AudioServicesPlaySystemSound (soundFileObject);
 }
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration

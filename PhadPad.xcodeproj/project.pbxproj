@@ -23,6 +23,8 @@
 		2EE5113A12A54CA7006FB802 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE5113412A54CA7006FB802 /* Default.png */; };
 		2EE5113B12A54CA7006FB802 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE5113512A54CA7006FB802 /* Default-Landscape.png */; };
 		2EE5113C12A54CA7006FB802 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE5113612A54CA7006FB802 /* Default@2x.png */; };
+		4E8E51B812A558BB009F8244 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8E51B712A558BB009F8244 /* AudioToolbox.framework */; };
+		4E8E51D012A55940009F8244 /* TouchMe.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4E8E51CF12A55940009F8244 /* TouchMe.aif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		2EE5113412A54CA7006FB802 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
 		2EE5113512A54CA7006FB802 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "Resources/Default-Landscape.png"; sourceTree = "<group>"; };
 		2EE5113612A54CA7006FB802 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
+		4E8E51B712A558BB009F8244 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4E8E51CF12A55940009F8244 /* TouchMe.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = TouchMe.aif; path = Resources/sounds/TouchMe.aif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 				2E56772D1295B6C80015CA0D /* UIKit.framework in Frameworks */,
 				2E56772F1295B6C80015CA0D /* Foundation.framework in Frameworks */,
 				2E5677311295B6C80015CA0D /* CoreGraphics.framework in Frameworks */,
+				4E8E51B812A558BB009F8244 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +108,7 @@
 		2E5677231295B6C80015CA0D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4E8E51C912A5592E009F8244 /* sounds */,
 				2EE5113012A54C92006FB802 /* images */,
 				2E79B7DE12A3F6B10093C76B /* Application.xib */,
 				2E5677321295B6C80015CA0D /* PhadPad-Info.plist */,
@@ -114,6 +120,7 @@
 		2E5677241295B6C80015CA0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E8E51B712A558BB009F8244 /* AudioToolbox.framework */,
 				2E56772C1295B6C80015CA0D /* UIKit.framework */,
 				2E56772E1295B6C80015CA0D /* Foundation.framework */,
 				2E5677301295B6C80015CA0D /* CoreGraphics.framework */,
@@ -140,6 +147,14 @@
 				2EE5113612A54CA7006FB802 /* Default@2x.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		4E8E51C912A5592E009F8244 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				4E8E51CF12A55940009F8244 /* TouchMe.aif */,
+			);
+			name = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +215,7 @@
 				2EE5113A12A54CA7006FB802 /* Default.png in Resources */,
 				2EE5113B12A54CA7006FB802 /* Default-Landscape.png in Resources */,
 				2EE5113C12A54CA7006FB802 /* Default@2x.png in Resources */,
+				4E8E51D012A55940009F8244 /* TouchMe.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
