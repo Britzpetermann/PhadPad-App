@@ -10,8 +10,12 @@
 	<array/>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleIconFile</key>
-	<string></string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>iPhoneAppstoreIcon.png</string>
+		<string>iPadAppstoreIcon.png</string>
+		<string>iPhone4AppstoreIcon.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.britzpetermann.phadpad</string>
 	<key>CFBundleInfoDictionaryVersion</key>

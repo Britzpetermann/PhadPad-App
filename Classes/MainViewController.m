@@ -23,7 +23,17 @@
 	
 	[progressBar setHidden:YES];	
 
-	UIImage *rawimage = [UIImage imageNamed:@"TouchArea-ipad.png"];
+	// add background image
+	UIImage *rawimage;
+	UIDevice* thisDevice = [UIDevice currentDevice];
+    if(thisDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad)
+    {
+		rawimage = [UIImage imageNamed:@"TouchArea-ipad.png"];
+    }
+    else
+    {
+		rawimage = [UIImage imageNamed:@"TouchArea.png"];
+    }	
 	image.image = rawimage;
 	[rawimage release];
 
