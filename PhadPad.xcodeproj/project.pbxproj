@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E55374B12A668A10051AFCD /* crossdomain.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2E55374A12A668A10051AFCD /* crossdomain.xml */; };
+		2E55383212A6AD8C0051AFCD /* TouchArea-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E55383012A6AD8C0051AFCD /* TouchArea-ipad.png */; };
 		2E56772D1295B6C80015CA0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E56772C1295B6C80015CA0D /* UIKit.framework */; };
 		2E56772F1295B6C80015CA0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E56772E1295B6C80015CA0D /* Foundation.framework */; };
 		2E5677311295B6C80015CA0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5677301295B6C80015CA0D /* CoreGraphics.framework */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		2E55374A12A668A10051AFCD /* crossdomain.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = crossdomain.xml; path = Resources/crossdomain.xml; sourceTree = "<group>"; };
+		2E55383012A6AD8C0051AFCD /* TouchArea-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TouchArea-ipad.png"; path = "Resources/TouchArea-ipad.png"; sourceTree = "<group>"; };
 		2E5677291295B6C80015CA0D /* PhädPäd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PhädPäd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E56772C1295B6C80015CA0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2E56772E1295B6C80015CA0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -144,6 +146,7 @@
 		2EE5113012A54C92006FB802 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				2E55383012A6AD8C0051AFCD /* TouchArea-ipad.png */,
 				2EA07E0812A5652100658CDC /* Default-Landscape-rotated.png */,
 				2EE5113112A54CA7006FB802 /* config.png */,
 				2EE5113212A54CA7006FB802 /* config-ipad.png */,
@@ -224,6 +227,7 @@
 				4E8E51D012A55940009F8244 /* TouchMe.aif in Resources */,
 				2EA07E0912A5652100658CDC /* Default-Landscape-rotated.png in Resources */,
 				2E55374B12A668A10051AFCD /* crossdomain.xml in Resources */,
+				2E55383212A6AD8C0051AFCD /* TouchArea-ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

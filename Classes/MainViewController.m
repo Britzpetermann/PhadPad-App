@@ -21,17 +21,18 @@
     self.accelerometer.updateInterval = .05;
     self.accelerometer.delegate = self;
 	
+	[progressBar setHidden:YES];	
+
+	UIImage *rawimage = [UIImage imageNamed:@"TouchArea-ipad.png"];
+	image.image = rawimage;
+	[rawimage release];
+
+	//play startsound
 	NSURL *startSound = [[NSBundle mainBundle] URLForResource: @"TouchMe" withExtension: @"aif"];
     self.soundFileURLRef = (CFURLRef) [startSound retain];
 	AudioServicesCreateSystemSoundID(soundFileURLRef, &soundFileObject);
-	
-	[progressBar setHidden:YES];
-	
-	[self playStartSound];
-}
-
--(void) playStartSound {
 	AudioServicesPlaySystemSound (soundFileObject);
+	
 }
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
@@ -134,7 +135,6 @@
 	CGColorSpaceRelease(colorSpace);
 	CGContextRelease(context);
 	CGImageRelease(imageRef);
-	//free(bytes);
 }
 
 - (void) showProgress
@@ -145,8 +145,6 @@
 - (void) updateProgress:(int) bytes
 {
 	float progressValue = ((float)bytes) / (1024*768*4);
-	NSLog(@"p %f", progressValue);
-	
 	[progressBar setProgress:progressValue];
 }
 

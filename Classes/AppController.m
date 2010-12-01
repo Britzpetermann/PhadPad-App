@@ -192,36 +192,7 @@
 	[_outStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
 	[_outStream open];
 }
-
-- (void) readImage
-{
-	if (bytesRead == 0)
-	{					
-		NSLog(@"read alloc");
-		[mainViewController showProgress];
-		bytes = malloc(768*1024*4);
-	}
-	
-	while ([_inStream hasBytesAvailable])
-	{
-		unsigned char *bytes2 = &bytes[bytesRead];
-		bytesRead += [_inStream read:bytes2 maxLength:1024*768*4];
-		[mainViewController updateProgress:bytesRead];					
-	}
-	
-	//				NSLog(@"read %d bytes",bytesRead);
-	
-	if (bytesRead == 1024*768*4)
-	{
-		NSLog(@"draw");
-		[mainViewController drawImage:bytes];
-		bytesRead = 0;
-		free(bytes);
-		[mainViewController hideProgress];
-	}	
-}
 @end
-
 
 #pragma mark -
 @implementation AppController (NSStreamDelegate)
@@ -246,11 +217,7 @@
 		case NSStreamEventHasBytesAvailable:
 		{
 			if (stream == _inStream) {
-				
-//				NSLog(@"read start");
-				
-				// [self readImage];
-				
+												
 				while ([_inStream hasBytesAvailable])
 				{
 					
@@ -262,43 +229,33 @@
 					}
 					
 					while ([_inStream hasBytesAvailable])
-					{
-						Boolean isFirstRequest = FALSE;
-						if (bytesRead == 0)
-							isFirstRequest = TRUE;
-						
+					{					
 						unsigned char *bytes2 = &bytes[bytesRead];
-						bytesRead += [_inStream read:bytes2 maxLength:1024*768*4];
-						
-						NSString *s = [NSString stringWithCString:bytes2 length:bytesRead];
-						NSLog(@"input: %@", s);
-						
+						int currentBytesRead = [_inStream read:bytes2 maxLength:1024*768*4];
+						bytesRead += currentBytesRead;
+
+						//NSLog(@"Received bytes: %i", currentBytesRead);
+
 						[mainViewController updateProgress:bytesRead];
 						
-						if (isFirstRequest && bytesRead == 23)
+						//found policy
+						if (currentBytesRead == 23)
 						{
-							NSLog(@"Found Policy File Request");
+							NSLog(@"Found policy file request");
 							
 							//reset image loading
 							bytesRead = 0;
 							free(bytes);
 							[mainViewController hideProgress];
 							
-//							NSString *policyFile = @"<?xml version=\"1.0\"?><!DOCTYPE cross-domain-policy SYSTEM \"http://www.adobe.com/xml/dtds/cross-domain-policy.dtd\"><cross-domain-policy><allow-access-from domain=\"*\" to-ports=\"*\"/></cross-domain-policy>";
-							
+
+							//send policy file
 							if (_outStream && [_outStream hasSpaceAvailable])
-							{
-								
-//								NSData *policyFileBytes = [policyFile dataUsingEncoding:NSUTF8StringEncoding];
-								
+							{								
 								NSString *filePath = [[NSBundle mainBundle] pathForResource:@"crossdomain" ofType:@"xml"];  
 								NSData *policyFileBytes = [NSData dataWithContentsOfFile:filePath];  
-								
-								//NSData *policyFileBytes = [NSData dataWithContentsOfFile:@"crossdomain.xml"];
 	
 								uint32_t length = [policyFileBytes length];
-								
-								NSLog(@"len: %i", length);
 								
 								if([_outStream write:(const uint8_t *)[policyFileBytes bytes] maxLength:length] == -1)									
 								{
@@ -309,22 +266,19 @@
 									uint8_t end = 0;
 									if ([_outStream write:(const uint8_t *)&end maxLength:1] == -1)
 									{
-										NSLog(@"could not terminate");
-										
+										NSLog(@"Could not terminate policy file");
 									}
 									else
 									{
-										NSLog(@"terminated");
-										
+										NSLog(@"Policy file send success");
 									}
-									NSLog(@"sended policy file");
 								}
 							}	
 							
 						}
-						else if (isFirstRequest && bytesRead == 0)
+						else if (currentBytesRead == -1 || currentBytesRead == 0)
 						{
-							NSLog(@"Found Policy File Request Artifact");
+							NSLog(@"Found End...");
 							
 							//reset image loading
 							bytesRead = 0;
@@ -332,9 +286,7 @@
 							[mainViewController hideProgress];
 						}
 					}
-					
-					//				NSLog(@"read %d bytes",bytesRead);
-					
+										
 					if (bytesRead == 1024*768*4)
 					{
 						NSLog(@"draw");

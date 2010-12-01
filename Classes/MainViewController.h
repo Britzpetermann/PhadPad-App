@@ -14,7 +14,6 @@
     SystemSoundID soundFileObject;
 }
 
-- (void) playStartSound;
 - (void) showConfig;
 - (void) hideConfig;
 - (void) drawImage:(unsigned char *) bytes;
