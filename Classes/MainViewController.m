@@ -47,7 +47,7 @@
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
 {    
-    [(AppController*)[[UIApplication sharedApplication] delegate] sendAcceleration:acceleration];
+   [(AppController*)[[UIApplication sharedApplication] delegate] sendAcceleration:acceleration];
 }
 
 - (void) showConfig

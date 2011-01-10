@@ -13,7 +13,6 @@ NSString * const TCPServerErrorDomain = @"TCPServerErrorDomain";
 @end
 
 @implementation TCPServer
-
 @synthesize delegate=_delegate, netService=_netService, port=_port;
 
 - (id)init {

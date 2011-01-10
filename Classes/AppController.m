@@ -11,14 +11,9 @@
 @synthesize window;
 @synthesize mainViewController;
 
-- (void) _showAlert:(NSString *)title
+- (void) _errorAndSetup:(NSString *)title
 {
-	//prevent alert and reconnect
-	
-	/*UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:@"Check your networking configuration." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-	[alertView show]; 
-	[alertView release];*/
-	
+	NSLog(@"Error and Setup: %@", title);	
     [self setup];
 }
 
@@ -70,33 +65,95 @@
 	[super dealloc];
 }
 
+- (void)startPolicyTimer
+{
+    [sendPolicyTimer invalidate];
+	
+    sendPolicyTimer = [NSTimer scheduledTimerWithTimeInterval: 0.01 target:self selector:
+					   @selector(waitForOutStreamAndSendPolicy:) userInfo:nil repeats:YES];
+	
+    [sendPolicyTimer fire];
+}
+
+- (void)stopPolicyTimer
+{
+    [sendPolicyTimer invalidate];
+    sendPolicyTimer = nil;
+}
+
+- (void)sendPolicyFile
+{	
+	if (blockForPolicy && _outStream && [_outStream hasSpaceAvailable])
+	{		
+		[self stopPolicyTimer];
+		
+		NSString *filePath = [[NSBundle mainBundle] pathForResource:@"crossdomain" ofType:@"xml"];  
+		NSData *policyFileBytes = [NSData dataWithContentsOfFile:filePath]; 
+		uint32_t length = [policyFileBytes length];
+		
+		uint8_t *bytesWithTermination = malloc(length + 1);
+		memcpy(bytesWithTermination, [policyFileBytes bytes], length);
+		bytesWithTermination[length] = 0;
+		
+		NSLog(@"Writing policy to output...");
+		
+		if([_outStream write:bytesWithTermination maxLength:length + 1] == -1)									
+		{
+			[self _errorAndSetup:@"Failed sending policy to peer"];
+		}
+		else
+		{			
+			NSLog(@"Did send policy file request.");
+			[self setup];
+		}
+		
+		blockForPolicy = false;		
+	}
+	else
+	{
+		NSLog(@"Output not available!");
+	}	
+}
+
+- (void)waitForOutStreamAndSendPolicy:(NSTimer *)theTimer
+{
+	[self sendPolicyFile];
+}
+
 - (void) setup {
+	NSLog(@"server stop...");
+	
+	[self stopPolicyTimer];
+	
 	[_server release];
 	_server = nil;
 	
 	[_inStream removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
 	[_inStream release];
 	_inStream = nil;
-	_inReady = NO;
 
 	[_outStream removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
 	[_outStream release];
 	_outStream = nil;
-	_outReady = NO;
 	
 	_server = [TCPServer new];
 	[_server setDelegate:self];
 	NSError *error = nil;
-	if(_server == nil || ![_server start:&error]) {
+	if(_server == nil || ![_server start:&error])
+	{
 		if (error == nil) {
 			NSLog(@"Failed creating server: Server instance is nil");
 		} else {
-		NSLog(@"Failed creating server: %@", error);
+			NSLog(@"Failed creating server: %@", error);
 		}
-		[self _showAlert:@"Failed creating server"];
+		[self _errorAndSetup:@"Failed creating server"];
 		return;
 	}
-	
+	else
+	{
+		NSLog(@"server started...");		
+	}
+
 	[self presentPicker:nil];
 }
 
@@ -115,8 +172,8 @@
 }
 
 - (void) sendAcceleration:(UIAcceleration*)acceleration
-{
- 	if (_outStream && [_outStream hasSpaceAvailable])
+{	
+ 	if (!blockForPolicy && _outStream && [_outStream hasSpaceAvailable])
 	{
 		int HEADER_SIZE = 1 + 4;
 		int MESSAGE_SIZE = 3 * 4;
@@ -138,7 +195,7 @@
 		
 		if([_outStream write:(const uint8_t *)&message maxLength:sizeof(message)] == -1)
 		{
-			[self _showAlert:@"Failed sending data to peer"];			
+			[self _errorAndSetup:@"Failed sending acceleration to peer"];			
 		}
 		else
 		{
@@ -149,7 +206,8 @@
 
 - (void) sendTouch:(CGPoint)point addr:(int)addr type:(int)type
 {
-	if (_outStream && [_outStream hasSpaceAvailable])
+	
+	if (!blockForPolicy && _outStream && [_outStream hasSpaceAvailable])
 	{
 		int HEADER_SIZE = 1 + 4;
 		int MESSAGE_SIZE = 2 * 4 + 4;
@@ -174,7 +232,7 @@
 		
 		if([_outStream write:(const uint8_t *)&message maxLength:sizeof(message)] == -1)
 		{
-			[self _showAlert:@"Failed sending data to peer"];			
+			[self _errorAndSetup:@"Failed sending touch to peer"];			
 		}
 		else
 		{
@@ -185,12 +243,12 @@
 
 - (void) openStreams
 {
-	_inStream.delegate = self;
-	[_inStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
-	[_inStream open];
 	_outStream.delegate = self;
 	[_outStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
 	[_outStream open];
+	_inStream.delegate = self;
+	[_inStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+	[_inStream open];
 }
 @end
 
@@ -202,15 +260,23 @@
 	switch(eventCode) {
 		case NSStreamEventOpenCompleted:
 		{
+			NSLog(@"NSStreamEventOpenCompleted");
+			
 			[self destroyPicker];
+			
+			blockForPolicy = false;
 			
 			[_server release];
 			_server = nil;
 
 			if (stream == _inStream)
-				_inReady = YES;
+			{
+				NSLog(@"NSStreamEventOpenCompleted in ready");
+			}
 			else
-				_outReady = YES;
+			{
+				NSLog(@"NSStreamEventOpenCompleted out ready");
+			}
 				
 			break;
 		}
@@ -234,7 +300,7 @@
 						int currentBytesRead = [_inStream read:bytes2 maxLength:1024*768*4];
 						bytesRead += currentBytesRead;
 
-						//NSLog(@"Received bytes: %i", currentBytesRead);
+						NSLog(@"Received bytes: %i", currentBytesRead);
 
 						[mainViewController updateProgress:bytesRead];
 						
@@ -243,43 +309,18 @@
 						{
 							NSLog(@"Found policy file request");
 							
+							blockForPolicy = true;
+							[self startPolicyTimer];
+							
 							//reset image loading
 							bytesRead = 0;
 							free(bytes);
 							[mainViewController hideProgress];
-							
-
-							//send policy file
-							if (_outStream && [_outStream hasSpaceAvailable])
-							{								
-								NSString *filePath = [[NSBundle mainBundle] pathForResource:@"crossdomain" ofType:@"xml"];  
-								NSData *policyFileBytes = [NSData dataWithContentsOfFile:filePath];  
-	
-								uint32_t length = [policyFileBytes length];
-								
-								if([_outStream write:(const uint8_t *)[policyFileBytes bytes] maxLength:length] == -1)									
-								{
-									[self _showAlert:@"Failed sending data to peer"];			
-								}
-								else
-								{
-									uint8_t end = 0;
-									if ([_outStream write:(const uint8_t *)&end maxLength:1] == -1)
-									{
-										NSLog(@"Could not terminate policy file");
-									}
-									else
-									{
-										NSLog(@"Policy file send success");
-									}
-								}
-							}	
-							
 						}
 						else if (currentBytesRead == -1 || currentBytesRead == 0)
 						{
-							NSLog(@"Found End...");
-							
+							NSLog(@"Found Termination...");
+														
 							//reset image loading
 							bytesRead = 0;
 							free(bytes);
@@ -302,13 +343,15 @@
 		}
 		case NSStreamEventErrorOccurred:
 		{
+			NSLog(@"NSStreamEventErrorOccurred");
 			NSLog(@"%s", _cmd);
-			[self _showAlert:@"Error encountered on stream!"];			
+			[self _errorAndSetup:@"Error encountered on stream!"];			
 			break;
 		}
 			
 		case NSStreamEventEndEncountered:
 		{
+			NSLog(@"NSStreamEventEndEncountered");
 			NSLog(@"%s", _cmd);
 			[self setup];
 			break;
@@ -324,8 +367,12 @@
 
 - (void)didAcceptConnectionForServer:(TCPServer *)server inputStream:(NSInputStream *)istr outputStream:(NSOutputStream *)ostr
 {
+	NSLog(@"didAcceptConnectionForServer");
+	
 	if (_inStream || _outStream || server != _server)
 		return;
+
+	NSLog(@"release and open stream");
 	
 	[_server release];
 	_server = nil;

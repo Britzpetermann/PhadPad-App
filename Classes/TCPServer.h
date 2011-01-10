@@ -19,6 +19,7 @@ typedef enum {
 
 
 @interface TCPServer : NSObject <NSNetServiceDelegate> {
+	
 @private
 	id _delegate;
     uint16_t _port;

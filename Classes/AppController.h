@@ -15,10 +15,13 @@
 	TCPServer			*_server;
 	NSInputStream		*_inStream;
 	NSOutputStream		*_outStream;
-	BOOL				_inReady;
-	BOOL				_outReady;
+	
+	NSTimer *sendPolicyTimer;
+	
 	unsigned char *bytes;
 	int bytesRead;
+	bool blockForPolicy;
+;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
